@@ -1,0 +1,199 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'ui system', sans-serif;
+    text-decoration: none;
+}
+
+body{
+    padding: 2.5rem;
+    background-color:whitesmoke;
+}
+
+.container{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header{
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header .brand{
+    font-size: 3rem;
+    color: pink;
+}
+
+header .avatar-container{
+    margin-top: 1rem;
+    width: 12rem;
+    height: 12rem;
+    border: 0.5rem solid pink;
+    border-radius: 100%;
+}
+
+header .avatar-container img{
+    width: 100%;
+    height: 100%;
+}
+
+
+header a{
+    margin-top: 1rem;
+    color: pink;
+    font-size: 1.5rem;
+}
+main{
+    width: 100%;
+    margin-top: 2rem;
+}
+.vertical-grid{
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    width: 100%;
+    gap: 1rem;
+}
+
+.vertical-grid .link{
+    width: 100%;
+    background-color: rgba(255, 192, 203, 0.027);
+    font-size: 2rem;
+    text-align: center;
+    padding: 0.3rem;
+    border: 0.3rem solid pink;
+    border-radius: 0.1rem;
+    color: pink;
+}
+
+.horizontal-grid {
+    margin-top: 2rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 1.5rem;
+    justify-content: center;
+    align-items: center;
+    padding: 0 3rem;
+}
+
+.horizontal-grid .icon-link{
+    display: flex;
+    /* background-color: #ffc0cb; */
+    width: 100%;
+    height: 2.5rem;
+    align-items: center;
+    justify-content: center;
+    border-radius: 0.25rem;
+}
+
+.horizontal-grid .icon-link img{
+    width: 100%;
+    height: 100%;
+}
+
+
+
+/*---- Responsive ----*/
+@media(min-width: 1000px) {
+    .container{
+        width: 100%;
+        height: 100%;
+    }
+    
+    header{
+        margin-top: 1rem;
+    }
+    
+    header .brand{
+        font-size: 3rem;
+        color: pink;
+    }
+    
+    header .avatar-container{
+        margin-top: 1rem;
+        width: 10rem;
+        height: 10rem;
+        border: 0.5rem solid pink;
+        border-radius: 100%;
+    }
+    
+    header .avatar-container img{
+        width: 100%;
+        height: 100%;
+    }
+    
+    
+    header a{
+        margin-top: 1rem;
+        color: pink;
+        font-size: 1.5rem;
+    }
+    main{
+        width: 100%;
+        margin-top: 2rem;
+    }
+    .vertical-grid{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        width: 100%;
+        gap: 1rem;
+        padding: 0 15rem;
+    }
+    
+    .vertical-grid .link{
+        width: 100%;
+        background-color: rgba(255, 192, 203, 0.027);
+        font-size: 2rem;
+        text-align: center;
+        padding: 0.3rem;
+        border: 0.3rem solid pink;
+        border-radius: 0.1rem;
+        color: pink;
+        transition: all 400ms;
+    }
+
+    .vertical-grid .link:hover{
+        width: 100%;
+        background-color: pink;
+        border: 0;
+        color: whitesmoke;
+        box-shadow: 0.1rem 0.1rem 8px 10px rgba(56, 56, 56, 0.082);
+    }
+    
+    .horizontal-grid {
+        margin-top: -5rem;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        gap: 1rem;
+        justify-content: center;
+        align-items: center;
+        padding: 0 30rem;
+    }
+    
+    .horizontal-grid .icon-link{
+        display: flex;
+        /* background-color: #ffc0cb; */
+        width: 100%;
+        height: 2.5rem;
+        align-items: center;
+        justify-content: center;
+        border-radius: 0.25rem;
+        padding: 0.5rem;
+        transition: all 400ms;
+    }
+
+    .horizontal-grid .icon-link:hover{
+        background-color: rgb(255, 146, 164);
+    }
+    
+    .horizontal-grid .icon-link img{
+        width: 100%;
+        height: 100%;
+    }
+}
